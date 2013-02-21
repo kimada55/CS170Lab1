@@ -1,12 +1,16 @@
 # 1. Print the numbers from 1 to 10 to the console without writing a for loop or a while loop. Put each number on its own line.
 # I'll get  you started! 
 
-my_num = 1
+puts *1..10
 
 
 # 2. Get input from the console and save it to a variable. Prompt the user to enter a string such as their name or school. 
 #  	Print to the console the string in caps and reversed, then print out the length of the string. 
 
+puts "What is your name?"
+name = gets.chomp.upcase.reverse
+p name
+p name.length
 
 
 =begin 
@@ -14,10 +18,14 @@ my_num = 1
  of that string, and print out that type. What does this mean about Ruby variables? 
 =end
 
+name.class
+name = name.length
+name.class
+
+This means that objects variables are dynamically typed.
 
 
 # 4. Create a Ruby object with two fields, such as for a first and last name. 
-
 
 
 # 5. Now give this object two more fields. 
